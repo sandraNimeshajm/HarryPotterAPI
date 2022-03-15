@@ -12,6 +12,9 @@ const characters = () => {
           const name = document.createElement("p");
           name.innerHTML = `<span>Name</span>: ${el.name}`;
 
+          const gender = document.createElement("p");
+          gender.innerHTML = `<span>Gender</span>: ${el.gender}`;
+
           const house = document.createElement("p");
           house.innerHTML = `<span>House</span>: ${el.house}`;
 
@@ -24,6 +27,7 @@ const characters = () => {
           container.appendChild(card);
           card.appendChild(img);
           card.appendChild(name);
+          card.appendChild(gender);
           card.appendChild(house);
           card.appendChild(actor);
         });
