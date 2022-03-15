@@ -1,0 +1,40 @@
+.container {
+  max-width: 1430px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 64px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+.title {
+  @extend .roboto-48-bold;
+  padding: 24px;
+  text-align: center;
+}
+
+.card {
+  max-width: 400px;
+  width: 100%;
+
+  img {
+    height: 500px;
+    margin-bottom: 16px;
+  }
+
+  span {
+    @extend .roboto-24-bold;
+  }
+
+  p {
+    @extend .roboto-24-normal;
+    text-align: center;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}

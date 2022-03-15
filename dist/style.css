@@ -31,6 +31,14 @@ a:hover,
 a:active {
   outline: none; }
 
+img {
+  border: 0;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden; }
+
 b,
 strong {
   font-weight: bold; }
@@ -107,39 +115,45 @@ td {
   font-style: normal;
   font-display: swap; }
 
-.container {
-  max-width: 1430px;
-  margin: 0 auto; }
-  @media screen and (max-width: 1530px) {
-    .container {
-      max-width: 100%;
-      padding: 0 50px; } }
-  @media screen and (max-width: 767px) {
-    .container {
-      padding: 0 20px; } }
+.roboto-48-bold, .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: bold; }
 
-.line-link {
-  position: relative; }
-  .line-link::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    background: #000;
-    border-radius: 3px;
-    height: 4px;
-    bottom: -10px;
-    left: 0;
-    will-change: transform;
-    transform-origin: 100% 50%;
-    transform: scale3d(0, 1, 1);
-    transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1); }
-  @media only screen and (min-width: 768px) {
-    .line-link:hover::after {
-      transform-origin: 0% 50%;
-      transform: scale3d(1, 1, 1);
-      transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1); } }
+.roboto-24-bold, .card span {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold; }
+
+.roboto-24-normal, .card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: normal; }
 
 /* Components */
-.this {
-  display: block; }
+.container {
+  max-width: 1430px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 64px;
+  margin: 0 auto;
+  padding: 48px; }
+
+.title {
+  padding: 24px;
+  text-align: center; }
+
+.card {
+  max-width: 400px;
+  width: 100%; }
+  .card img {
+    height: 500px;
+    margin-bottom: 16px; }
+  .card p {
+    text-align: center; }
+  .card p:not(:last-child) {
+    margin-bottom: 16px; }
 

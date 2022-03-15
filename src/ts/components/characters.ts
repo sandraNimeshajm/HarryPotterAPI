@@ -10,16 +10,16 @@ const characters = () => {
           card.classList.add("card");
 
           const name = document.createElement("p");
-          name.textContent = `Name:${el.name}`;
+          name.innerHTML = `<span>Name</span>: ${el.name}`;
 
           const house = document.createElement("p");
-          house.textContent = `House:${el.house}`;
+          house.innerHTML = `<span>House</span>: ${el.house}`;
 
           const img = document.createElement("img");
           img.setAttribute("src", el.image);
 
           const actor = document.createElement("p");
-          actor.textContent = `Actor:${el.actor}`;
+          actor.innerHTML = `<span>Actor</span>: ${el.actor}`;
 
           container.appendChild(card);
           card.appendChild(img);

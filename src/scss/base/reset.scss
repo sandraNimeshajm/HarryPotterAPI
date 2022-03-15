@@ -33,6 +33,15 @@ a:active {
   outline: none;
 }
 
+img {
+  border: 0;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 b,
 strong {
   font-weight: bold;
