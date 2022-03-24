@@ -24,7 +24,7 @@ const characters = () => {
 
           person.image
             ? img.setAttribute("src", person.image)
-            : img.setAttribute("src", "/src/images/no-img.png");
+            : img.setAttribute("src", "./src/images/no-img.png");
 
           const actor = document.createElement("p");
 
