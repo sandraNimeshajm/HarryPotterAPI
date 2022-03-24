@@ -10,11 +10,22 @@
   padding: 0 24px;
 }
 
+.title-box {
+  padding-top: 24px;
+  max-width: 890px;
+  width: 100%;
+  margin: 0 auto 64px;
+}
+
 .title {
   @extend .roboto-48-bold;
-  padding-top: 24px;
   text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
+}
+
+.text {
+  @extend .roboto-24-bold;
+  text-align: center;
 }
 
 .card {
@@ -23,7 +34,7 @@
 
   img {
     height: 500px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     transition: transform 0.3s;
 
     @include hover {
@@ -57,16 +68,21 @@
     padding: 0 1.25vw;
   }
 
-  .title {
+  .title-box {
     padding-top: 1.25vw;
-    margin-bottom: 3.33333vw;
+    max-width: 46.35417vw;
+    margin: 0 auto 3.33333vw;
+  }
+
+  .title {
+    margin-bottom: 1.66667vw;
   }
 
   .card {
     max-width: 20.83333vw;
     img {
       height: 26.04167vw;
-      margin-bottom: 0.83333vw;
+      margin-bottom: 1.66667vw;
     }
     p:not(:last-child) {
       margin-bottom: 0.83333vw;
